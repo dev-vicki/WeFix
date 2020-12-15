@@ -8,7 +8,7 @@
             <!-- <input type="email" placeholder="Enter Your Email.." required> -->
             <button type="submit" value="send" name="submit">SEND</button>
             <small>Copyright @ 2020, Designed by Vicki With <i class="fas fa-heart" style="color:red;"></i>&nbsp 
-            <a href="#">Admin Login</a></small>
+            <a href="./Admin/AdminLogin.php">Admin Login</a></small>
         </form>
     </div>
 </section>
