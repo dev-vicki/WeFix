@@ -19,7 +19,7 @@
   <!-- Side Bar -->
   <div class="container-fluid" style="margin-top:70px;">
     <div class="row ">
-      <nav class="col-sm-2 sidebar py-5" style="background-color:#6900d1">
+      <nav class="col-sm-2 sidebar py-5 d-print-none" style="background-color:#6900d1">
         <ul class="nav flex-column">
           <div class=" sidebar-sticky">
             <li class="nav-item"><a class="nav-link <?php if(PAGE == 'RequesterProfile'){echo 'active';} ?> " href="./RequesterProfile.php">
