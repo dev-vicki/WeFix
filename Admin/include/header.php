@@ -24,7 +24,7 @@
     <div class="row ">
       <nav class="col-sm-2 sidebar py-5" style="background-color:#6900d1">
         <ul class="nav flex-column">
-          <div class=" sidebar-sticky">
+          <div class=" sidebar-sticky position-fixed">
             <li class="nav-item"><a class="nav-link <?php if(PAGE == 'dashboard'){echo 'active';} ?> "
                 href="./dashBoard.php">
                 <i class="fas fa-tachometer-alt"></i><label class=" pl-2">Dashboard</label></a>
