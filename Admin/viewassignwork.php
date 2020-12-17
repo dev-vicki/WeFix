@@ -1,38 +1,25 @@
-<?php
-define('TITLE', 'Check Status');
-define('PAGE', 'CheckStatus');
-include('include/header.php');
+<?php 
+define('TITLE', 'Work Order');
+define('PAGE', 'Workorder');
 include('../dbConnection.php');
+include('./include/header.php');
 session_start();
-if($_SESSION['is_login']){
-  $rEmail = $_SESSION['rEmail'];
+if(isset($_SESSION['is_adminlogin'])){
+  $aEmail = $_SESSION['aEmail'];
 } else {
-  echo "<script>location.href='RequesterLogin.php';</script>";
+  echo "<script> location.href = 'login.php'</script>";
 }
 ?>
 
 <div class="col-sm-6 mt-5 mx-3">
-  <form action="" method="POST" class="form-inline d-print-none">
-    <div class="form-group mr-3">
-      <label for="checkid" class="mr-2">Enter Request ID: </label>
-      <input type="text" class="form-control" name="checkid" name="checkid" id="checkid"
-        onKeyPress="isInputNumber(event)">
-    </div>
-    <button type="submit" class="btn btn-outline-light text-white shadow-sm" style="background-color:#6900d1"
-      name="">Search</button>
-  </form>
-  <?php 
-if(isset($_REQUEST['checkid'])){
-  if($_REQUEST['checkid'] == ""){
-    $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert">FILL ALL FIELDS</div>';
-  } else{
-      $sql = "SELECT * FROM assignwork_tb WHERE request_id = {$_REQUEST['checkid']}";
-      $result = $conn->query($sql);
-      $row = $result->fetch_assoc();
-  if(isset($row['request_id']) == ($_REQUEST['checkid'])){ ?>
-
-  <h3 class="text-center mt-5">Assigned Work Details</h3>
-  <table class="table table-bordered">
+<h3 class="text-center">Assigned Work Details </h3>
+<?php 
+  if(isset($_REQUEST['view'])){
+    $sql = "SELECT * FROM assignwork_tb WHERE request_id = {$_REQUEST['id']}";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc(); ?>
+ 
+   <table class="table table-bordered">
     <tbody>
       <tr>
         <td>Request ID</td>
@@ -97,30 +84,16 @@ if(isset($_REQUEST['checkid'])){
     </tbody>
   </table>
   <div class="text-center">
-  <form action="" class="mb-3 d-print-none">
-  <input class="btn btn-danger mr-3" type="submit" value="Print" onClick="window.print()">
+  <form action="" class="mb-3 d-print-none d-inline">
+  <input class="btn btn-danger mr-3" type="submit" value="Print" onClick="window.print()"> </form>
+  <form action="workOrder.php" class="mb-3 d-print-none d-inline">
   <input class="btn btn-secondary" type="submit" value="Close">
   </form>
   </div>
-  <?php } else {
-  echo '<div class="alert alert-info mt-4">Your Request is Still Pending</div>';
-} 
-  }
-}?>
-  <?php if(isset($msg)) {echo $msg;} ?>
+<?php } ?>
+
 </div>
 
-<script>
-  function isInputNumber(evt) {
-    var ch = String.fromCharCode(evt.which);
-    if (!(/[0-9]/.test(ch))) {
-      evt.preventDefault();
-    }
-  }
-</script>
-
-
-
 <?php 
-include('include/footer.php');
+include('./include/footer.php');
 ?>
