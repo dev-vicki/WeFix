@@ -10,7 +10,7 @@ if(isset($_SESSION['is_adminlogin'])){
   echo "<script> location.href = 'login.php'</script>";
 }
 ?>
-?>
+
 
 <div class="col-sm-9 col-md-9 mt-5 text-center">
 <p class="bg-dark text-white p-2">List of Requesters</p>
