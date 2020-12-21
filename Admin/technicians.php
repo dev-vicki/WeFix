@@ -81,6 +81,3 @@ if(isset($_REQUEST['delete'])){
 </body>
 </html>
 
-<?php 
-include('./include/footer.php');
-?>
