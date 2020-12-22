@@ -61,7 +61,7 @@
                 href="./ChangePassword.php">
                 <i class="fas fa-key"></i><label class=" pl-2">Change Password</label></a>
             </li>
-            <li class="nav-item"><a class="nav-link <?php if(PAGE == 'Logout'){echo 'active';} ?>" href="#">
+            <li class="nav-item"><a class="nav-link <?php if(PAGE == 'Logout'){echo 'active';} ?>" href="./AdminLogout.php">
                 <i class="fas fa-sign-out-alt"></i><label class=" pl-2">Logout</label></a>
             </li>
           </div>

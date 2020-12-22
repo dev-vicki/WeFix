@@ -92,13 +92,6 @@ if(isset($_SESSION['is_adminlogin'])){
   }
 </script>
 
-</div>
-</div>
-  <!-- Javascript -->
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/all.min.js"></script>
-
-</body>
-</html>
+<?php 
+include('./include/footer.php');
+?>

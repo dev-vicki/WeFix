@@ -42,13 +42,17 @@ if($result->num_rows > 0){
       echo '<td>'.$row["p_sellingprice"].'</td>';
       echo '<td>';
         echo '<form action="editAssets.php" method="POST" class="d-inline">';
-          echo '<input type="hidden" name="id" value='.$row["pid"].'>
-          <button type="submit" class="btn btn-info mr-3" name="edit" value="Edit"><i class="fas fa-pen"></i></button>';
+        echo '<input type="hidden" name="id" value='.$row["pid"].'>
+        <button type="submit" class="btn btn-info mr-3" name="edit" value="Edit"><i class="fas fa-pen"></i></button>';
         echo '</form>';
-                echo '<form action="" method="POST" class="d-inline">';
+          echo '<form action="" method="POST" class="d-inline">';
           echo '<input type="hidden" name="id" value='.$row["pid"].'>
           <button type="submit" class="btn btn-secondary mr-3" name="delete" value="Delete"><i class="fas fa-trash-alt"></i></button>';
-        echo '</form>';
+          echo '</form>';
+            echo '<form action="sellProducts.php" method="POST" class="d-inline">';
+            echo '<input type="hidden" name="id" value='.$row["pid"].'>
+            <button type="submit" class="btn btn-warning mr-3" name="issue" value="Issue"><i class="fas fa-handshake"></i></button>';
+            echo '</form>';
       echo '</td>';
       echo '</tr>';
     }
