@@ -9,6 +9,19 @@ if(isset($_SESSION['is_adminlogin'])){
 } else {
   echo "<script> location.href = 'Adminlogin.php'</script>";
 }
+$sql = "SELECT max(request_id) FROM submitrequest_tb";
+$result = $conn->query($sql);
+$row = $result->fetch_row();
+$submitrequest = $row[0];
+
+$sql = "SELECT max(request_id) FROM assignwork_tb";
+$result = $conn->query($sql);
+$row = $result->fetch_row();
+$assignwork = $row[0];
+
+$sql = "SELECT * FROM technician_tb";
+$result = $conn->query($sql);
+$totaltech = $result->num_rows;
 ?>
 
 <!-- DashBoad -->
@@ -18,8 +31,8 @@ if(isset($_SESSION['is_adminlogin'])){
             <div class="card text-white bg-danger mb-3" style="max-width:18rem;">
               <div class="card-header">Requests Received</div>
               <div class="card-body">
-                <h4 class="card-title">43</h4>
-                <a class="btn text-white" href="#">View</a>
+                <h4 class="card-title"><?php echo $submitrequest; ?></h4>
+                <a class="btn text-white" href="requestTrack.php">View</a>
               </div>
             </div>
           </div>
@@ -28,8 +41,8 @@ if(isset($_SESSION['is_adminlogin'])){
             <div class="card text-white bg-success mb-3" style="max-width:18rem;">
               <div class="card-header">Requests Assigned</div>
               <div class="card-body">
-                <h4 class="card-title">22</h4>
-                <a class="btn text-white" href="#">View</a>
+                <h4 class="card-title"><?php echo $assignwork; ?></h4>
+                <a class="btn text-white" href="workOrder.php">View</a>
               </div>
             </div>
           </div>
@@ -38,8 +51,8 @@ if(isset($_SESSION['is_adminlogin'])){
             <div class="card text-white bg-info mb-3" style="max-width:18rem;">
               <div class="card-header">No. of Technician</div>
               <div class="card-body">
-                <h4 class="card-title">7</h4>
-                <a class="btn text-white" href="#">View</a>
+                <h4 class="card-title"><?php echo $totaltech; ?></h4>
+                <a class="btn text-white" href="technicians.php">View</a>
               </div>
             </div>
           </div>
