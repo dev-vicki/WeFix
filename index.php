@@ -72,10 +72,10 @@
             <h2 class="title">We provide a wide range<br> of services</h2>
             <p class="subtitle">Let's start fixing with WEFIX app to save a huge money today</p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 active">
                     <div class="service-box">
                         <img src="images/tvpurple.png">
-                        <h6>Express Delivery</h6>
+                        <h6>Monitors</h6>
                         <p>Lorem ipsum, or lipsum as sometimes known, is dummy text used in</p>
                         <i class="fa fa-arrow-right"></i>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="col-md-4">
                     <div class="service-box">
                         <img src="images/laptoppurple.png">
-                        <h6>Offer Arround You</h6>
+                        <h6>Laptops</h6>
                         <p>Lorem ipsum, or lipsum as sometimes known, is dummy text used in</p>
                         <i class="fa fa-arrow-right"></i>
                     </div>
@@ -91,7 +91,7 @@
                 <div class="col-md-4">
                     <div class="service-box">
                         <img src="images/smartphonepurple.png">
-                        <h6>Pocket Friendly</h6>
+                        <h6>Smart Phones</h6>
                         <p>Lorem ipsum, or lipsum as sometimes known, is dummy text used in</p>
                         <i class="fa fa-arrow-right"></i>
                     </div>
