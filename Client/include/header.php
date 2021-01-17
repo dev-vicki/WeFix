@@ -21,7 +21,7 @@
     <div class="row ">
       <nav class="col-sm-2 sidebar py-5 d-print-none" style="background-color:#6900d1">
         <ul class="nav flex-column">
-          <div class=" sidebar-sticky">
+          <div class="sidebar-sticky">
             <li class="nav-item"><a class="nav-link <?php if(PAGE == 'RequesterProfile'){echo 'active';} ?> " href="./RequesterProfile.php">
                 <i class="fas fa-user"></i><label class=" pl-2">Profile</label></a>
             </li>

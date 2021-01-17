@@ -2,7 +2,7 @@
 $db_host = "localhost";
 $db_user = "root";
 $db_password = "";
-$db_name = "untitled_project";
+$db_name = "wefix";
 $db_port = 3307;
 
 // Create Connection

@@ -49,10 +49,9 @@ include('dbConnection.php');
                       <label for="password" class="font-weight-bold pl-2">Password</label>
                       <input type="password" class="form-control" placeholder="Password" name="rPassword" required>
                   </div>
-                  <button type="submit" class="btn btn-lg mt-5 btn-block shadow-sm explore"
-                      name="rRegister">REGISTER</button>
-                  <em style="font-size: 10px">Note - By clicking signup, you agree to our terms, data policy and cookie
-                      policy.</em>
+                  <button type="submit" class="btn btn-lg mt-4 btn-block shadow-sm explore"
+                      name="rRegister" style="width: 26rem">REGISTER</button>
+                  <em style="font-size: 10px; margin-left:2rem">Note - By clicking register, you agree to our terms and conditions.</em>
                   <?php if(isset($regmsg)) {echo $regmsg;} ?>
               </form>
           </div>
