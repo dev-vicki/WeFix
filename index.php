@@ -12,12 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <title>Wefix</title>
+    <title>WeFix</title>
 </head>
-
 <body>
     <!-- Navigation Bar and Brand Logo -->
-
     <section class="header">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
@@ -42,11 +40,18 @@
                             <a class="nav-link" href="Client/RequesterLogin.php">LOGIN</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/membership.php">MEMBERSHIP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs.php">BLOGS</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contactus">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            
             <!-- Banner Image -->
             <div class="row banner">
                 <div class="col-md-6">
@@ -75,24 +80,24 @@
                 <div class="col-md-4 active">
                     <div class="service-box">
                         <img src="images/tvpurple.png">
-                        <h6>Monitors</h6>
-                        <p>Lorem ipsum, or lipsum as sometimes known, is dummy text used in</p>
+                        <h6>Book a Service</h6>
+                        <p>Book a service from your home or work at a time slot that suits best to your convenience.</p>
                         <i class="fa fa-arrow-right"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
                         <img src="images/laptoppurple.png">
-                        <h6>Laptops</h6>
-                        <p>Lorem ipsum, or lipsum as sometimes known, is dummy text used in</p>
+                        <h6>One stop solution</h6>
+                        <p>A trained technician will be assigned to you and they will reach your destination at the required time.</p>
                         <i class="fa fa-arrow-right"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
                         <img src="images/smartphonepurple.png">
-                        <h6>Smart Phones</h6>
-                        <p>Lorem ipsum, or lipsum as sometimes known, is dummy text used in</p>
+                        <h6>Get it repaired</h6>
+                        <p>Get your device repaired without much hassle.</p>
                         <i class="fa fa-arrow-right"></i>
                     </div>
                 </div>
@@ -100,9 +105,12 @@
         </div>
     </section>
 
-    <!-- Create Account Section -->
+    <!-- Register Account Section -->
     <?php include('userRegistration.php') ?>
 
+    <!-- Membership Section -->
+    <?php include('membership.php') ?>
+    <!-- Blogs Section -->
 
     <!-- Testimonials Section -->
 
@@ -122,30 +130,28 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/Vicki.jpeg">
+                            <img src="images/A.png">
                             <div class="carousel-caption">
-                                <h6>Vignesh Vicky</h6>
+                                <h6>Anaga</h6>
                                 <small>Frontend Engineer @ Razorpay</small>
-                                <p>Lorem ipsum, or lipsum as sometimes <br>known, is dummy text used in lorem ipsum, or
-                                    lipsum as sometimes <br>known, is dummy text used in</p>
+                                <p>Got the best service from WeFix and got my product deliverd on time.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/sahithya.jpeg">
+                            <img src="images/H.png">
                             <div class="carousel-caption">
-                                <h6>Sahithya Sathish</h6>
+                                <h6>Hardik</h6>
                                 <small>Fashion Designer @ Myntra</small>
-                                <p>Lorem ipsum, or lipsum as sometimes <br>known, is dummy text used in lorem ipsum, or
-                                    lipsum as sometimes <br>known, is dummy text used in</p>
+                                <p>My laptop needed a quick fix and WeFix helped me get it done on time and at affordable cost. </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/vikram.jpeg">
+                            <img src="images/R.png">
                             <div class="carousel-caption">
-                                <h6>Vikram Kumar</h6>
+                                <h6>Rohit</h6>
                                 <small>Backend Engineer @ Freshworks</small>
-                                <p>Lorem ipsum, or lipsum as sometimes <br>known, is dummy text used in lorem ipsum, or
-                                    lipsum as sometimes <br>known, is dummy text used in</p>
+                                <p>Thank you WeFix for proving such a good service.<br>Will
+                                continue to use WeFix for further issues as well </p>
                             </div>
                         </div>
                     </div>

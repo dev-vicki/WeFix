@@ -27,7 +27,7 @@ if(isset($_REQUEST['submit'])){
             <input type="email" name="email" placeholder="Enter Your Email.." required>
             <input type="text" name="regarding" placeholder="Enter Your Queries.." required>
             <button type="submit" value="send" name="submit">SEND</button>
-            <small>Copyright @ 2021, Designed by WeFix With <i class="fas fa-heart" style="color:red;"></i>&nbsp 
+            <small>Copyright @ 2021, Designed by WeFix With <i class="fas fa-heart" style="color:white;"></i>&nbsp 
             <a href="./Admin/AdminLogin.php">Admin Login</a></small>
         </form>
     </div>

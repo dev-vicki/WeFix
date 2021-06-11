@@ -51,7 +51,7 @@ include('dbConnection.php');
                   </div>
                   <button type="submit" class="btn btn-lg mt-4 btn-block shadow-sm explore"
                       name="rRegister" style="width: 26rem">REGISTER</button>
-                  <em style="font-size: 10px; margin-left:2rem">Note - By clicking register, you agree to our terms and conditions.</em>
+                  <!-- <em style="font-size: 10px; margin-left:2rem">Note - By clicking register, you agree to our terms and conditions.</em> -->
                   <?php if(isset($regmsg)) {echo $regmsg;} ?>
               </form>
           </div>
